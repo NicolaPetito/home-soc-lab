@@ -27,20 +27,13 @@ My dissertation used a cloud-based cyber range with OpenStack, Kubernetes, Helm,
 
 This home lab has a different scope:
 
-  This home lab has a different scope:
-
-   Aspect            Cyber Range (Dissertation)                        This Home Lab
-  ━━━━━━━━━━━━━━━━  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Infrastructure    Cloud-native, orchestrated                        Local VMs, static
-  ────────────────  ────────────────────────────────────────────────  ─────────────────────────────────────────────────
-   Purpose           Attack simulation platform                        Detection engineering
-  ────────────────  ────────────────────────────────────────────────  ─────────────────────────────────────────────────
-   Orientation       Red team / attacker perspective                   Blue team / defender perspective
-  ────────────────  ────────────────────────────────────────────────  ─────────────────────────────────────────────────
-   MITRE usage       Map attack scenarios to techniques                Map detections to techniques
-  ────────────────  ────────────────────────────────────────────────  ─────────────────────────────────────────────────
-   Complexity        Platform-level (managing the system that runs     Application-level (managing the things that
-                     things)                                           run)
+| Aspect | Cyber Range (Dissertation) | This Home Lab |
+|---|---|---|
+| Infrastructure | Cloud-native, orchestrated | Local VMs, static |
+| Purpose | Attack simulation platform | Detection engineering |
+| Orientation | Red team / attacker perspective | Blue team / defender perspective |
+| MITRE usage | Map attack scenarios to techniques | Map detections to techniques |
+| Complexity | Platform-level (managing the system that runs things) | Application-level (managing the things that run) |
 
 The two projects support each other. The dissertation focuses more on building and running attack environments, while this lab focuses on detecting and investigating activity inside a controlled environment. Together, they show both attack and defence work at different layers of the stack.
 
@@ -88,15 +81,12 @@ VMware creates a virtual network interface on the host machine, visible in Windo
 
 ### IP Address Allocation
 
-VM                Role                        Host-Only IP
-━━━━━━━━━━━━━━━━  ━━━━━━━━━━━━━━━━━━━━━━━━━━  ━━━━━━━━━━━━━━━
-Wazuh Server      SIEM manager + dashboard    192.168.56.10
-────────────────  ──────────────────────────  ───────────────
-Windows Victim    RDP target, Wazuh agent     192.168.56.20
-────────────────  ──────────────────────────  ───────────────
-Linux Victim      SSH target, Wazuh agent     192.168.56.30
-────────────────  ──────────────────────────  ───────────────
-Kali Attacker     Attack platform             192.168.56.40
+| VM | Role                 | Host-Only IP |
+|---|----------------------|---|
+| Wazuh Server | SIEM manager + dashboard | 192.168.56.10 |
+| Windows Victim | RDP target, Wazuh agent | 192.168.56.20 |
+| Linux Victim | SSH, Wazuh agent     | 192.168.56.30 |
+|Kali Attacker | Attack platform |192.168.56.40 |
 
 Static IPs are assigned manually on each VM's internal network interface. This is intentional. In a real environment, servers normally need predictable addresses so agents and services know where to connect. If DHCP was used here, IP addresses could change after a reboot and break Wazuh agent registration.
 
