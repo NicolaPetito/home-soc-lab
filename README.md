@@ -34,7 +34,7 @@ This lab shifts perspective to the **defensive side**: when attacks occur, how c
 │   │                  │  │ Ubuntu 22.04 │  │   Victim     │  │
 │   │                  │  │192.168.56.10 │  │192.168.56.20 │  │
 │   │                  │  └──────┬───────┘  └──────┬───────┘  │
-│   │                  │         │ (agent logs)     │         │
+│   │                  │         │ (agent logs)    │          │
 │   │                  │  ┌──────┴───────┐  ┌──────┴───────┐  │
 │   │                  │  │ Linux Victim │  │  Kali Linux  │  │
 │   │                  │  │  Debian 12   │  │   Attacker   │  │
