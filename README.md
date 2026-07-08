@@ -1,4 +1,4 @@
-# Home SOC Lab — Blue Team Detection Engineering
+# Home SOC Lab — Blue Team Detection
 
 ## Overview
 
