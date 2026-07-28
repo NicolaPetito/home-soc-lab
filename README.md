@@ -103,7 +103,7 @@ Internal traffic (attacks, agent communications, SIEM logs) flows over the **Hos
 |---|---|
 | Lab design and documentation | Complete |
 | VM setup and networking | Complete |
-| Wazuh deployment | In progress |
+| Wazuh deployment | Complete |
 | T1110 — Brute Force scenario | Pending |
 | T1046 — Network Scan scenario | Pending |
 | T1053 — Scheduled Task scenario | Pending |
