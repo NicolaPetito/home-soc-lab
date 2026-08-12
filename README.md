@@ -104,8 +104,8 @@ Internal traffic (attacks, agent communications, SIEM logs) flows over the **Hos
 | Lab design and documentation | Complete |
 | VM setup and networking | Complete |
 | Wazuh deployment | Complete |
-| T1110 — Brute Force scenario | Pending |
-| T1046 — Network Scan scenario | Pending |
-| T1053 — Scheduled Task scenario | Pending |
+| T1110 — Brute Force scenario | Complete |
+| T1046 — Network Scan scenario | Complete |
+| T1053 — Scheduled Task scenario | Complete |
 | SOC analyst simulation | Pending |
 | MITRE ATT\&CK Navigator layer | Pending |
