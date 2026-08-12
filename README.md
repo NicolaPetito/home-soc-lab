@@ -80,9 +80,9 @@ Internal traffic (attacks, agent communications, SIEM logs) flows over the **Hos
 | Kali Linux | Attack platform | Industry standard for penetration testing, pre-loaded toolset |
 | Hydra | Brute force simulation | Well-documented tool for controlled authentication attack testing and T1110 validation |
 | Nmap | Network reconnaissance | Standard network scanning tool used to simulate and detect T1046-style activity |
-| Metapolis | Attack validation framework | Useful for controlled exploitation and post-exploitation testing in isolated environments |
-| Atomic Red Team | Attack simulation library | MITRE-mapped test cases for validating detection coverage in a controlled ways |
-| MITRE ATT\&CK Navigator | Detection coverage visualisation | Useful for mapping, communicating, and reviewing detection coverage |
+| Metasploit | Attack validation framework | Useful for controlled exploitation and post-exploitation testing in isolated environments |
+| Atomic Red Team | Attack simulation library | MITRE-mapped test cases for validating detection coverage in a controlled ways (https://github.com/redcanaryco/atomic-red-team) |
+| MITRE ATT\&CK Navigator | Detection coverage visualisation | Useful for mapping, communicating, and reviewing detection coverage (https://attack.mitre.org/) |
 | Sigma | Detection rule format | SIEM-agnostic community standard for sharing detection logic |
 
 ---
